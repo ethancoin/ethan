@@ -562,10 +562,11 @@ bool CTxMemPool::accept(CTxDB& txdb, CTransaction &tx, bool fCheckInputs,
     if ((int64_t)tx.nLockTime > std::numeric_limits<int>::max())
         return error("CTxMemPool::accept() : not accepting nLockTime beyond 2038 yet");
 
-    // Rather not work on nonstandard transactions (unless -testnet)
-    if (!fTestNet && !tx.IsStandard())
-        return error("CTxMemPool::accept() : nonstandard transaction type");
-
+    // Rather not work on nonstandard transactions (unless -testnet) before block 24 000
+    if (pindexBest->nHeight < 24000) { // enable Stealth tx after block 24 000
+		if (!fTestNet && !tx.IsStandard())
+			return error("CTxMemPool::accept() : nonstandard transaction type");
+    }
     // Do we already have it?
     uint256 hash = tx.GetHash();
     {

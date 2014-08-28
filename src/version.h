@@ -33,7 +33,7 @@ static const int DATABASE_VERSION = 70509;
 static const int PROTOCOL_VERSION = 60015;
 
 // earlier versions not supported and are disconnected
-static const int MIN_PROTO_VERSION = 60014
+static const int MIN_PROTO_VERSION = 60014;
 
 static const int INIT_PROTO_VERSION = 209;
 

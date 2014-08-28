@@ -155,7 +155,7 @@
        <item>
         <widget class="QPushButton" name="sendButton">
          <property name="toolTip">
-          <string>Sign a message to prove you own a BoomCoin address</string>
+          <string>Sign a message to prove you own a ETHAN address</string>
          </property>
          <property name="text">
           <string>&amp;Send</string>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>785</width>
-    <height>480</height>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -263,6 +263,19 @@
          </spacer>
         </item>
         <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../ethan.qrc">:/images/backg</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QLabel" name="label_2">
           <property name="text">
            <string/>
@@ -354,6 +367,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../ethan.qrc"/>
+ </resources>
  <connections/>
 </ui>

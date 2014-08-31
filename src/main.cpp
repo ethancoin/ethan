@@ -563,7 +563,7 @@ bool CTxMemPool::accept(CTxDB& txdb, CTransaction &tx, bool fCheckInputs,
         return error("CTxMemPool::accept() : not accepting nLockTime beyond 2038 yet");
 
     // Rather not work on nonstandard transactions (unless -testnet) before block 24 000
-    if (pindexBest->nHeight < 26000) { // enable Stealth tx after block 26 000
+    if (pindexBest->nHeight < 27000) { // enable Stealth tx after block 27 000
 		if (!fTestNet && !tx.IsStandard())
 			return error("CTxMemPool::accept() : nonstandard transaction type");
     }

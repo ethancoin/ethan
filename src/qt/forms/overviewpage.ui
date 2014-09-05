@@ -357,6 +357,48 @@
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="QLabel" name="visitwebsite">
+             <property name="text">
+              <string>&lt;a href=&quot;http://ethancoin.info&quot;&gt;visit our website&lt;/a&gt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+             <property name="textInteractionFlags">
+              <set>Qt::LinksAccessibleByMouse</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="tradeonbittrex">
+             <property name="text">
+              <string>&lt;a href=&quot;https://bittrex.com/Market/Index?MarketName=BTC-ETHAN&quot;&gt;Trade on Bittrex&lt;/a&gt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="tradeonccex">
+             <property name="text">
+              <string>&lt;a href=&quot;https://c-cex.com/?p=ethan-btc&quot;&gt;Trade on C-CEX&lt;/a&gt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
         </item>
